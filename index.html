@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+    <title>Coca-Cola Landing Page</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="coca-cola-logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h3>open happiness with <br><span>Coke</span></h3>
+                <p>Whoever You Are, Whatever You Do, Wherever You May Be, When You Think of Refreshment Think of Ice Cold Coca-Cola</p>
+           <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="https://www.freeiconspng.com/thumbs/coca-cola-png/coca-cola-drink-png-image-coca-cola-format-png-9.png" class="coke">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="https://www.freeiconspng.com/thumbs/coca-cola-png/coca-cola-drink-png-image-coca-cola-format-png-9.png" onclick="imgSlider('https://www.freeiconspng.com/thumbs/coca-cola-png/coca-cola-drink-png-image-coca-cola-format-png-9.png');changeBgColor('white')"></li>
+            <li><img src="https://www.luckystore.in/cdn/shop/products/Cherry12oz.png?v=1672911061" onclick="imgSlider('https://www.luckystore.in/cdn/shop/products/Cherry12oz.png?v=1672911061');changeBgColor('#CBC3E3')"></li>
+            <li><img src="https://i.pinimg.com/originals/1c/d5/5f/1cd55faecd1ea063474d83115dd8c490.png" onclick="imgSlider('https://i.pinimg.com/originals/1c/d5/5f/1cd55faecd1ea063474d83115dd8c490.png');changeBgColor('skyblue')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><i class="fa-brands icon i-1 fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands icon i-2 fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands icon i-3 fa-twitter"></i></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+            document.querySelector('.coke').src = anything;
+        }
+        function changeBgColor(color)
+        {
+            const sec=document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
